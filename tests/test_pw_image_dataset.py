@@ -1,4 +1,4 @@
-from pw_imagedataset import *
+from pwimagedataset import PWImageDataset
 
 import getpass
 import random
@@ -9,7 +9,7 @@ def csv2label( line, zip_filename, img_filename ):
     return (float(data[1]), data[2])
 
 
-zip_file = ["images/images_7z.7z", "images/images_zip.zip"]
+zip_file = ["dataset.7z", "dataset.zip"]
 exts = ['png']
 
 print( "Enter password for zipfile [PassDataset]:" )

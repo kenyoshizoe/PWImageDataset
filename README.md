@@ -1,4 +1,13 @@
 # pPassLoader
+## Install
+```
+# for pip
+pip install git+https://github.com/kenyoshizoe/PWImageDataset.git
+# for poetry
+poetry add git+https://github.com/kenyoshizoe/PWImageDataset.git
+# for rye
+rye add pwimagedataset --git https://github.com/kenyoshizoe/PWImageDataset.git
+```
 
 ## Command for making archive with password
 

@@ -1,0 +1,29 @@
+[project]
+name = "pwimagedataset"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name= "Masayuki Tanaka", email= "mtanaka@sc.e.titech.ac.jp" },
+    { name = "Ken Yoshizoe", email = "kyoshizoe@ok.sc.e.titech.ac.jp" }
+]
+dependencies = [
+    "torch",
+    "py7zr>=0.22.0",
+    "pillow",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pwimagedataset"]
