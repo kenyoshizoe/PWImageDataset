@@ -7,9 +7,9 @@ authors = [
     { name = "Ken Yoshizoe", email = "kyoshizoe@ok.sc.e.titech.ac.jp" }
 ]
 dependencies = [
-    "torch>=2.5.1",
+    "torch",
     "py7zr>=0.22.0",
-    "pillow>=11.0.0",
+    "pillow",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
