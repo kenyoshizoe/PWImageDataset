@@ -58,6 +58,8 @@ nvidia-nvjitlink-cu12==12.4.127
     # via torch
 nvidia-nvtx-cu12==12.4.127
     # via torch
+pillow==11.0.0
+    # via pwimagedataset
 psutil==6.1.0
     # via py7zr
 py7zr==0.22.0
