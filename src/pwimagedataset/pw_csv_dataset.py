@@ -61,8 +61,9 @@ class PwCsvDataset(Dataset):
         return len(self.csv_data)
 
     def __getitem__(self, index):
+        img_path = ""
         for key, value in self.csv_data[index].items():
-            if key.lower().endswith(".png") or key.lower().endswith(".jpg"):
+            if value.lower().endswith(".png") or value.lower().endswith(".jpg"):
                 img_path = value
                 break
 
@@ -70,6 +71,7 @@ class PwCsvDataset(Dataset):
         return self.get_image(img_path), self.csv_data[index]
 
     def get_image(self, file_path, format="RGB"):
+        img_pil = None
         if (self.filename.endswith(".zip")):
             with zipfile.ZipFile(self.filename, "r") as zp:
                 with zp.open(file_path, pwd=self.pw) as f:
